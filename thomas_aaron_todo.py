@@ -12,8 +12,7 @@ class TodoItem:
             "id": self.item_id,
             "category": self.category,
             "description": self.description,
-            "status": self.status
-        }
+            "status": self.status}
     @staticmethod
     def from_dict(data):
         return TodoItem(data["id"], data["category"], data["description"], data["status"])
